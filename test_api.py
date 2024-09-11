@@ -1,5 +1,5 @@
 # Автоматизированные тесты для микросервиса объявлений
-
+import random
 import requests
 import pytest
 
@@ -10,7 +10,6 @@ SUCCESSFUL_STATUS = "Сохранили объявление - "
 @pytest.fixture
 def unique_seller_id():
     """Генерация уникального sellerID в диапазоне 111111-999999"""
-    import random
     return random.randint(111111, 999999)
 
 
